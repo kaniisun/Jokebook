@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jokebook</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js"></script>
+</head>
+
+<body>
+  
+  <h2>Random Joke</h2>
+  <p id="random-joke">Get a random joke</p>
+  <button onclick="fetchRandomJoke()">Click!</button>
+
+  <h2>Categories</h2>
+  <button onclick="fetchCategories()">Show Categories</button>
+  <ul id="categories-list"></ul>
+
+  <h2>Add a Joke</h2>
+  <form id="new-joke-form" onsubmit="submitNewJoke(event)">
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="text" id="setup" placeholder="Setup" required>
+    <input type="text" id="delivery" placeholder="Delivery" required>
+    <button type="submit">Add</button>
+  </form>
+
+</body>
+</html>
